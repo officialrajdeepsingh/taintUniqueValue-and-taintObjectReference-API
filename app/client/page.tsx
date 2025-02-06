@@ -1,3 +1,4 @@
+"use client"
 import {  getServerUser  } from "@/utils/server-utils";
 import {  getServerOnlyUser  } from "@/utils/server-only-utils";
 import Link from "next/link";
