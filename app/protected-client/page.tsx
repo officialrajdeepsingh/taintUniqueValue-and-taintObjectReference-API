@@ -1,12 +1,10 @@
 "use client";
 
 import { use } from "react";
-import { getServerUser } from "@/utils/server-utils";
 import { getServerOnlyUser } from "@/utils/server-only-utils";
 import Link from "next/link";
 
 export default function Home() {
-  const { server_user } = use(getServerUser());
   const { server_only_user } = use(getServerOnlyUser());
 
   return (
@@ -32,38 +30,7 @@ export default function Home() {
       <div>
         <h1> Protected Client componet with Server Only </h1>
       </div>
-      <div className="container flex  flex-col md:flex-row items-center justify-between">
-        <div className="mt-36 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-          <h1 className="text-center mt-2"> Server utils</h1>
-          <div className="flex flex-col items-center py-5 pb-10">
-            <h5 className="mb-1 text-2xl font-medium text-gray-900 dark:text-white">
-              {" "}
-              {server_user.firstName} {server_user.lastName}{" "}
-            </h5>
-            <span className="text-lg bg-black text-white px-3 py-1 rounded-lg   ">
-              {server_user.company.department}
-            </span>
-            <div className="mt-4 inline-flex text-md text-gray-900 dark:text-white items-center">
-              {" "}
-              <GenderIcon /> {server_user.gender}{" "}
-            </div>
-            <div className="mt-4 inline-flex text-md text-gray-900 dark:text-white items-center">
-              {" "}
-              <AddressIcon /> {server_user.address.address}{" "}
-              {server_user.address.country}{" "}
-            </div>
-            <div className="my-4 inline-flex text-md text-gray-900 dark:text-white items-center">
-              {" "}
-              <EmailIcon /> {server_user.email}{" "}
-            </div>
-            <div className="inline-flex text-md text-gray-900 dark:text-white items-center">
-              {" "}
-              <AddressIcon /> {server_user.address.address}{" "}
-              {server_user.address.country}{" "}
-            </div>
-          </div>
-        </div>
-
+      <div className="container flex  flex-col md:flex-row items-center justify-center">
         <div className="mt-36 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
           <h1 className="text-center mt-2"> Server Only utils</h1>
           <div className="flex flex-col items-center py-5 pb-10">
