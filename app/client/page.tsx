@@ -10,16 +10,16 @@ export default function Home() {
   return (
     <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <div className="flex flex-row justify-around container">
-        <Link className="bg-white p-2 text-black rounded-md" href={"/"}>
+        <Link className="bg-black p-2 text-white rounded-md" href={"/"}>
           {" "}
           Server componet
         </Link>
-        <Link className="bg-white p-2 text-black rounded-md" href={"/client"}>
+        <Link className=" bg-black p-2 text-white rounded-md" href={"/client"}>
           {" "}
           Client componet
         </Link>
         <Link
-          className="bg-white p-2 text-black rounded-md"
+          className=" bg-black p-2 text-white rounded-md"
           href={"/protected-client"}
         >
           {" "}
