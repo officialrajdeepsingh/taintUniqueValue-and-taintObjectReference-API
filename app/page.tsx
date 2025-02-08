@@ -1,10 +1,10 @@
 import { getServerUser } from "@/utils/server-utils";
-// import { getServerOnlyUser } from "@/utils/server-only-utils";
+import { getServerOnlyUser } from "@/utils/server-only-utils";
 import Link from "next/link";
 
 export default async function Home() {
   const { server_user } = await getServerUser();
-  // const { server_only_user } = await getServerOnlyUser();
+  const { server_only_user } = await getServerOnlyUser();
 
   return (
     <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
@@ -29,7 +29,7 @@ export default async function Home() {
       <div>
         <h1> Server component</h1>
       </div>
-      <div className="container flex  flex-col md:flex-row items-center justify-center">
+      <div className="container flex  flex-col md:flex-row items-center justify-between">
         <div className="mt-36 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
           <h1 className="text-center mt-2"> Server utils</h1>
           <div className="flex flex-col items-center py-5 pb-10">
@@ -61,7 +61,7 @@ export default async function Home() {
           </div>
         </div>
 
-        {/*
+        
           <div className="mt-36 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
             <h1 className="text-center mt-2"> Server Only utils</h1>
             <div className="flex flex-col items-center py-5 pb-10">
@@ -92,7 +92,6 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          */}
       </div>
     </div>
   );
