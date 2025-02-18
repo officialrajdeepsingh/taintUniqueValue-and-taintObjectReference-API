@@ -1,6 +1,5 @@
 import { getDBUser } from "@/utils/utils";
 import { Mail, VenusAndMars, MapPinHouse } from "lucide-react";
-import Link from "next/link";
 
 export default async function Home() {
   const { user } = await getDBUser();
@@ -21,7 +20,7 @@ export default async function Home() {
             {user.firstName} {user.lastName}{" "}
           </h5>
           <span className="text-lg bg-white text-black px-3 py-1 rounded-sm mt-3   ">
-            {user.department}
+            {user.company.department}
           </span>
           <div className="mt-4 inline-flex text-md text-gray-900 dark:text-white items-center">
             {" "}
@@ -29,7 +28,7 @@ export default async function Home() {
           </div>
           <div className="mt-4 inline-flex text-md text-gray-900 dark:text-white items-center">
             {" "}
-            <MapPinHouse /> {user.address}{" "}
+            <MapPinHouse /> {user.address.address}{" "}
           </div>
           <div className="my-4 inline-flex text-md text-gray-900 dark:text-white items-center">
             {" "}
