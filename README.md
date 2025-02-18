@@ -1,20 +1,20 @@
-# Server Only 
+# taintUniqueValue and taintObjectReference APIs
 
-It is a next.js-based demo application that shows how to use the server-only package.
+It is a next.js-based demo application that shows how to use the taintUniqueValue and taintObjectReference APIs in  React.js 19.
 
 ---
 [How to Handle Errors in Next.js 15?](https://officialrajdeepsingh.medium.com/7268454d976f)
---- 
+---
 
 ## Getting Started
 
 The first step is to clone the **next error handling** project with a git command.
 
 ```bash
-git clone  https://github.com/officialrajdeepsingh/server-only.git 
+git clone  https://github.com/officialrajdeepsingh/taintUniqueValue-and-taintObjectReference-API.git
 
 # change folder
-cd server-only
+cd  taintUniqueValue-and-taintObjectReference-API
 ```
 The next step is to install the Node Package Using the Node package manager.
 
