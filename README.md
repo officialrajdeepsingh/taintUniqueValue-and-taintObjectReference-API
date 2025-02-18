@@ -1,14 +1,14 @@
 # taintUniqueValue and taintObjectReference APIs
 
-It is a next.js-based demo application that shows how to use the taintUniqueValue and taintObjectReference APIs in  React.js 19.
+A Beginner’s Guide to Using the taintUniqueValue and taintObjectReference APIs in Next.js and React.js 19.
 
 ---
-[How to Handle Errors in Next.js 15?](https://officialrajdeepsingh.medium.com/7268454d976f)
+[How to Use the taintUniqueValue and taintObjectReference APIs in a React.js 19 Application?](https://officialrajdeepsingh.medium.com/31787aff387f)
 ---
 
 ## Getting Started
 
-The first step is to clone the **next error handling** project with a git command.
+The first step is to clone the **taintUniqueValue-and-taintObjectReference-API** project with a git command.
 
 ```bash
 git clone  https://github.com/officialrajdeepsingh/taintUniqueValue-and-taintObjectReference-API.git
