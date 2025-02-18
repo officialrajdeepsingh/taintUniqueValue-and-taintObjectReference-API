@@ -1,17 +1,18 @@
 "use client";
 
-import { getDBUser } from "@/utils/protect-taintObject-utils";
+import { getDBUser } from "@/utils/protect-taintUnique-utils";
 import { Mail, VenusAndMars, MapPinHouse } from "lucide-react";
 import { use } from "react";
 
 export default function Home() {
-  const { user } = use(getDBUser());
+  const userPromise = getDBUser();
+  const { user } = use(userPromise);
 
   return (
     <div className="grid items-center justify-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <div className="container flex flex-row items-center justify-center">
         <h1 className="text-center mt-2 text-2xl">
-          React.js taintObjectReference APIs
+          React.js taintUniqueValue APIs
         </h1>
       </div>
 
