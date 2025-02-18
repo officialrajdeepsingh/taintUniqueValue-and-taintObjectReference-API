@@ -11,7 +11,7 @@ export function Navbar() {
         Home
       </Link>
       <Link
-        href="/taintUniqueValue"
+        href="/taintuniquevalue"
         className="text-center text-2xl bg-black text-white p-2 rounded "
       >
         {" "}
@@ -19,7 +19,7 @@ export function Navbar() {
       </Link>
 
       <Link
-        href="/taintObjectReference"
+        href="/taintobjectreference"
         className="text-center text-2xl bg-black text-white p-2 rounded "
       >
         {" "}
